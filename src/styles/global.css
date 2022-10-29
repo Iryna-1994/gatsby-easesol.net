@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ReadexPro-400 - latin */
+@font-face {
+  font-family: "ReadexPro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("../fonts/ReadexPro-VariableFont_wght.ttf"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/ReadexPro-VariableFont_wght.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/ReadexPro-VariableFont_wght.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/ReadexPro-Regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/ReadexPro-VariableFont_wght.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/ReadexPro-Regular.svg#ReadexPro-Regular") format("svg"); /* Legacy iOS */
+}
+
+/* === scroll bar === */
+.dark::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #555; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777; 
+}

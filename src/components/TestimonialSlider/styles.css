@@ -1,0 +1,121 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.slick-track {
+  display: flex;
+  column-gap: 20px;
+  left: -6px;
+}
+
+.slick-slider {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 215px auto;
+}
+
+.slick-slide {
+  padding-right: 0;
+}
+
+.slick-slide:last-child {
+  padding-right: 0;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-list {
+  width: 700px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 30px;
+}
+
+.slick-prev {
+  width: 30px;
+  height: 30px;
+  left: 0;
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.slick-next:before,
+.slick-prev:before,
+.slick-next:after,
+.slick-prev:after {
+  font-size: 26px;
+  color: #374151;
+}
+
+.slick-next {
+  width: 30px;
+  height: 30px;
+  right: 0;
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev {
+  display: none !important;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slick-dots {
+  bottom: -20px;
+}
+
+.slide-card,
+.slide-card-text,
+.slide-card-link {
+  transition: 0.3s;
+}
+
+.slide-card {
+  border-radius: 8px;
+}
+
+.slick-dots li button:before {
+  font-size: 9px;
+  width: 18px;
+  height: 18px;
+}
+
+.slick-dots li,
+.slick-dots li button {
+  width: 18px;
+  height: 18px;
+}
+
+.slick-dots li.slick-active button:before {
+  border: 1px solid #374151;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 640px) {
+  .slick-slider {
+    width: 100%;
+    margin: 0 auto 180px;
+  }
+
+  .slick-list {
+    cursor: pointer;
+    margin: 0;
+  }
+
+  .slick-dots {
+    bottom: 0;
+  }
+}

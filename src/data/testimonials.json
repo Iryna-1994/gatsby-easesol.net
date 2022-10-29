@@ -1,0 +1,27 @@
+[
+  {
+    "_id": 2,
+    "featuresUsed": ["privacy", "compliance"],
+    "author": {
+      "name": "Ben White",
+      "role": "Head of Engineering",
+      "company": {
+        "name": "Temedica"
+      }
+    },
+    "quote": "Easesol's is what I always wanted a Product Analytics SaaS to be. Private cloud option so GDPR becomes way more manageable, features built based on direct community feedback, focus on simplicity and usefulness over vanity features...Great job people!"
+  },
+  {
+    "_id": 1,
+    "featuresUsed": ["documentation", "open source"],
+    "author": {
+      "name": "Chris H",
+      "role": "Co-founder",
+      "company": {
+        "name": "Unknown",
+        "url": "https://www.g2.com/products/posthog/reviews/posthog-review-4887279"
+      }
+    },
+    "quote": "Easesol's extensive documentation and github repositories makes it easy to learn how to best take advantage of the platform and follow their product road map."
+  }
+]

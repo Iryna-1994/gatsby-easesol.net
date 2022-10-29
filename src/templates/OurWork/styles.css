@@ -1,0 +1,38 @@
+.our-work-detail-page picture>img {
+  height: auto !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .our-work-detail-page picture>img {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .case-study-box>div:nth-child(3) {
+    margin-top: -150px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .our-work-detail-page picture>img {
+    padding-top: 35%;
+    width: 100%;
+    margin: auto;
+  }
+
+  .case-study-box>div:nth-child(3) {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 1360px) {
+  .our-work-detail-page picture>img {
+    padding-top: 25%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .our-work-detail-page picture>img {
+    padding-top: 15%;
+  }
+}

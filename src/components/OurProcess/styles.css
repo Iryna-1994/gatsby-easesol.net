@@ -1,0 +1,44 @@
+.our-process-mini svg {
+  font-size: 3rem;
+  color: white;
+  transition: all 0.3s;
+}
+
+.our-process-mini:hover svg {
+  color: #374151;
+}
+
+.work-flow-item {
+  background: rgba(55, 65, 81, 0.7);
+}
+
+@media only screen and (min-width: 280px) {
+  .home-our-process>div {
+    border-width: 36px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home-our-process>div {
+    border-width: 12px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .work-flow-container {
+    background-image: url(../../images/our-process/our-process-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .home-our-process>div {
+    border-width: 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .home-our-process>div {
+    border-width: 36px;
+  }
+}

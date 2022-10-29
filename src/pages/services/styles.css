@@ -1,0 +1,51 @@
+.icon-box>svg {
+  font-size: 6rem;
+}
+
+.ready-started-box>svg {
+  font-size: 3rem;
+}
+
+.ready-started-box>p,
+.ready-started-box>svg {
+  transition: all 0.3s;
+}
+
+.ready-started-box:hover p {
+  color: white;
+}
+
+.ready-started-box:hover svg {
+  fill: white;
+}
+
+.ready-started-box:last-child>.divider {
+  display: none;
+}
+
+.why-us-divider {
+  width: 80%;
+}
+
+.help-icon-box>svg {
+  font-size: 4.5rem;
+  fill: #fff;
+}
+
+.startup-help-icon-box>svg {
+  font-size: 6.5rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .why-us-divider {
+    width: 70%;
+  }
+
+  .icon-box>svg {
+    font-size: 4.5rem;
+  }
+
+  .startup-help-icon-box>svg {
+    font-size: 5rem;
+  }
+}

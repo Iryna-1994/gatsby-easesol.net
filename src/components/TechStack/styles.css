@@ -1,0 +1,23 @@
+@media only screen and (min-width: 1360px) {
+    .tech-stack-left-box {
+        padding-left: 116px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .tech-stack-left-box {
+        padding-left: 130px;
+    }
+}
+
+@media only screen and (min-width: 1530px) {
+    .tech-stack-left-box {
+        padding-left: 100px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .tech-stack-left-box {
+        padding-left: 280px;
+    }
+}

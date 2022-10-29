@@ -1,0 +1,117 @@
+.slider-list>.slide {
+  display: flex;
+  padding: 0 12px!important;
+}
+
+.slider-section {
+  width: 100%;
+}
+
+.slider-container {
+  padding: 12px;
+}
+
+.slider-container>.slider-frame {
+  border-radius: 8px;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.slider-control-bottomcenter {
+  width: 100%;
+}
+
+.slider-control-bottomcenter>ul {
+  top: 20px!important;
+  left: 45px;
+}
+
+.slider-control-bottomcenter>ul>li>button {
+  background-color: #1f2937!important;
+  width: 30px;
+  height: 4px;
+  margin: 0 8px;
+  fill: #fff !important;
+}
+
+.dark .slider-control-bottomcenter>ul>li>button {
+  background-color: #fff!important;
+}
+
+.slider-control-bottomcenter>ul>li>button>svg {
+  display: none;
+  width: 10px;
+  height: 10px;
+}
+
+.slider-control-centerright {
+  margin-right: -10px;
+  display: none;
+}
+
+.slider-control-centerleft {
+  margin-left: 0px;
+  display: none;
+}
+
+.slider-control-centerright>button,
+.slider-control-centerleft>button {
+  padding: 0 !important;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-control-centerright>button>svg,
+.slider-control-centerleft>button>svg {
+  font-size: 2.5rem;
+  fill: #798293;
+}
+
+
+/* =====  Responsive  ===== */
+@media only screen and (max-width: 640px) {
+  .slider-container {
+    padding: 20px 0px;
+  }
+
+  .slider-list>.slide {
+    padding: 0!important;
+  }
+
+  .slider-control-centerright>button>svg,
+  .slider-control-centerleft>button>svg {
+    font-size: 1.5rem;
+    fill: #fff;
+  }
+  .slider-control-centerleft {
+    margin-left: 10px;
+  }
+  .slider-control-centerright {
+    margin-right: 5px;
+  }
+  .slider-control-bottomcenter>ul {
+    left: 0;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .slider-control-centerleft {
+    position: absolute;
+    left: 100px;
+  }
+  .slider-control-centerright {
+    position: absolute;
+    right: 100px;
+  }
+}
+@media only screen and (min-width: 2160px) {
+  .slider-control-centerleft {
+    position: absolute;
+    left: 400px;
+  }
+  .slider-control-centerright {
+    position: absolute;
+    right: 400px;
+  }
+}
