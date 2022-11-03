@@ -18,6 +18,9 @@ module.exports = {
     facebookUrl: "https://facebook.com/easesolofficial",
     twitterURL: "https://twitter.com/easesolofficial"
   },
+  flags: {
+    DEV_SSR: true
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-gdpr-cookies`,

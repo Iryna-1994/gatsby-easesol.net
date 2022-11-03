@@ -1,4 +1,5 @@
 import React from 'react';
+import { useWindowSize } from "@react-hook/window-size/throttled"
 import { useAllOurWork } from "@/hooks/use-our-work"
 import Carousel from 'nuka-carousel';
 import Slider from './slider';
@@ -10,7 +11,8 @@ const HireUsSlider = () => {
 
   const { primeWorks } = useAllOurWork()
 
-  const sliderSize = window.innerWidth < 1023 ? 1 : 1.3
+  const [maxWidth, maxHeight] = useWindowSize({ fps: 60 })
+  const sliderSize = maxWidth < 1023 ? 1 : 1.3
 
   return (
     <section className='slider-section mt-10 mb-5'>

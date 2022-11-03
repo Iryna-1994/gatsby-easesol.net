@@ -1,8 +1,15 @@
-import {useState, useEffect} from "react"
+import { useState, useEffect } from "react"
 
-const UseTheme = () : any => {
+const UseTheme = (): any => {
 
-  const [theme, setTheme] = useState(localStorage.theme)
+  let localMode: any = ''
+  if (typeof window === 'undefined') {
+    localMode = ''
+  } else {
+    localMode = localStorage.getItem('theme')
+  }
+
+  const [theme, setTheme] = useState(localMode);
   const nextTheme = theme === 'dark' ? 'light' : 'dark'
 
   useEffect(() => {

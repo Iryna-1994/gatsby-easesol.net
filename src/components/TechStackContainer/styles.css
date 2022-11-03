@@ -1,0 +1,9 @@
+.light .techstack-icon-box>.gatsby-image-wrapper:first-child,
+.dark .techstack-icon-box>.gatsby-image-wrapper:last-child {
+  display: block !important;
+}
+
+.light .techstack-icon-box>.gatsby-image-wrapper:last-child,
+.dark .techstack-icon-box>.gatsby-image-wrapper:first-child {
+  display: none !important;
+}

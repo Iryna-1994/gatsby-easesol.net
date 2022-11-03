@@ -1,4 +1,5 @@
-import React, { useEffect } from "react"
+import React from "react"
+import { useWindowSize } from "@react-hook/window-size/throttled"
 import IHeading from "../IHeading"
 import IButton from "../IButton"
 import AssessmentOutlinedIcon from '@material-ui/icons/AssessmentOutlined'
@@ -11,6 +12,8 @@ import NavigateNextIcon from '@material-ui/icons/NavigateNext'
 import './styles.css'
 
 const ServicesOurProcess = ({ }) => {
+
+  const [maxWidth, maxHeight] = useWindowSize({ fps: 60 })
 
   const data = [
     {
@@ -34,8 +37,6 @@ const ServicesOurProcess = ({ }) => {
       title: 'Cloud Support'
     },
   ]
-
-  const maxWidth = window.innerWidth
 
   return (
     <div className={`relative ${maxWidth > 767 ? 'grid' : 'block'} grid-cols-5 my-6 md:my-10 max-w-5xl gap-2`} data-aos="fade-up">
